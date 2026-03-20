@@ -10,8 +10,8 @@ const fs = require('fs');
 require('dotenv').config();
 
 const logger = require('./utils/logger');
-const errorHandler = require('./middleware/errorHandler');
-const authMiddleware = require('./middleware/auth');
+const { errorHandler } = require('./middleware/errorHandler');
+const { authMiddleware } = require('./middleware/auth');
 
 // Import routes
 const authRoutes = require('./routes/auth');
